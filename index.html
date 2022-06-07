@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <title>JS Image Search</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <!-- naviation section -->
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand mx-4"><img
+        src="https://furrowpump.com/wp-content/themes/furrowpump-child/img/lg.ajax-spinner-preloader.gif" width="50em"
+        height="50em" alt="">
+      Image Search Scrapper</a>
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+        <label class="custom-control-label" for="customSwitch1">Theme</label>
+      </div>
+  </nav>
+  <!-- end of navigation section -->
+
+
+
+  <!-- search section ends here -->
+  <div class="container mx-auto w-50 my-5 py-5">
+    <form id="form">
+      <input class="form-control-lg form-control mr-sm-2" type="search" placeholder="Quick Search" aria-label="Search" id="search"> 
+      <button class="btn btn-outline-success my-4 w-25 mx-auto d-block" type="submit">Search</button>
+    </form>
+  </div>
+  <!-- end of search section -->
+
+  <!-- results section starts here -->
+  <div class="container">
+      <div class="row">
+        <div class="col-sm" id="col">
+        </div>
+      </div>
+  </div>
+
+  <script type="module" src="js/Controller.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
